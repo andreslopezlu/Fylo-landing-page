@@ -1,0 +1,35 @@
+html {
+    --letter1: "Raleway";
+    --letter2: "Open Sans";
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #FFF;
+}
+
+.main {
+    border: 1px solid red;
+}
+
+.navbar {
+    display: flex;
+    margin: 24px 6.4% 0 6.4%;
+    justify-content: space-between;
+}
+
+.navbar__icon {
+    object-fit: contain;
+    height: auto;
+    width: 24%;
+}
+
+.navbar__list {
+    font-family: var(--letter1);
+    display: flex;
+    list-style: none;
+    justify-content:space-between;
+    width: 51%;
+    font-size: calc(1.2rem + 0.5vw);
+    align-items: center;
+}
