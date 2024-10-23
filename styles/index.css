@@ -1,0 +1,124 @@
+html {
+    font-size: 62.5%;
+    --letter1: "Raleway";
+    --letter2: "Open Sans";
+    --color1: #FFF;
+    --color2: #07043B;
+    --color3: #C2C2C2;
+    --color4: #615F7E;
+    --color5: #3DA08F;
+    --color6: #C0C0C0;
+    --color7: #2F65F8;
+    --color8: #F8F8FE;
+    --color9: #575988;
+    --weight1: 400;
+    --weight2: 700;
+}
+
+body {
+    background-color: var(--color1);
+}
+
+.navbar {
+    display: flex;
+    margin: 24px 6.4% 0 6.4%;
+    justify-content: space-between;
+}
+
+.navbar__icon {
+    object-fit: contain;
+    height: auto;
+    width: 24%;
+}
+
+.navbar__list {
+    font-family: var(--letter1);
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 51%;
+    align-items: center;
+}
+
+.navbar__item {
+    font-size: calc(1.2rem + 0.5vw);
+    color: var(--color2);
+    font-weight: var(--weight1);
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1__image {
+    display: block;
+    object-fit: contain;
+    height: auto;
+    width: 81%;
+    margin: 0 auto;
+    margin-top: 98px;
+}
+
+.section1__title {
+    color: var(--color2);
+    font-size: calc(2.4rem + 0.5vw);
+    font-family: var(--letter2);
+    margin-top: 40px;
+    width: 85%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.section1__text {
+    color: var(--color2);
+    text-align: center;
+    font-family: var(--letter2);
+    font-size: calc(1.4rem + 0.5vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 24px;
+    width: 80%;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    width: 81%;
+}
+
+.form1__input{
+    height: calc(4rem + 0.5vw);
+    border-radius: 3.13px;
+    border: 1px solid var(--color2);
+    padding: 21px;
+}
+
+.form1__input::placeholder {
+    color: var(--color3);
+    font-family: var(--letter1);
+    font-size: calc(1.2rem + 0.5vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+
+.form1__button {
+    background-color: var(--color7);
+    color: var(--color1);
+    font-family: var(--letter1);
+    font-size: calc(1.4rem + 0.5vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 16px;
+    height: calc(4rem + 0.5vw);
+    border-radius: 3.13px;
+    border: none;
+}
