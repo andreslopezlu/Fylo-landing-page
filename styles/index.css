@@ -93,35 +93,41 @@ body {
     width: 81%;
 }
 
-.form1__input{
+.form__input-big{
     height: calc(4rem + 0.5vw);
     border-radius: 3.13px;
     border: 1px solid var(--color2);
     padding: 21px;
 }
 
-.form1__input::placeholder {
+.form__placeholder {
     color: var(--color3);
     font-family: var(--letter1);
-    font-size: calc(1.2rem + 0.5vw);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.form__placeholder--big {
+    font-size: calc(1.2rem + 0.5vw);
     letter-spacing: 0.4px;
 }
 
-.form1__button {
+.form__button {
     background-color: var(--color7);
     color: var(--color1);
     font-family: var(--letter1);
-    font-size: calc(1.4rem + 0.5vw);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    border: none;
+}
+
+.form__button--big {
     margin-top: 16px;
     height: calc(4rem + 0.5vw);
     border-radius: 3.13px;
-    border: none;
+    font-size: calc(1.4rem + 0.5vw);
 }
 
 .section2 {
@@ -257,4 +263,60 @@ body {
     font-weight: 400;
     line-height: 11.798px;
     letter-spacing: 0.3px;
+}
+
+.section3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color9);
+}
+
+.section3__title {
+    color: var(--color1);
+    font-family: var(--letter1);
+    font-size: calc(1.8rem + 0.5vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 54px;
+    margin-bottom: 16px;
+}
+
+.section3__text {
+    color: var(--color1);
+    text-align: center;
+    font-family: var(--letter2);
+    font-size: calc(1.4rem + 0.5vw);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 24px;
+    width: 85%;
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    width: 64%;
+}
+
+.form__input-small {
+    height: calc(3.2rem + 0.5vw);
+    border-radius: 1.47px;
+    padding: 8px;
+    border: none;
+}
+
+.form__placeholder--small {
+    font-size: calc(1rem + 0.5vw);
+}
+
+.form__button--small {
+    margin-top: 8px;
+    height: calc(3.2rem + 0.5vw);
+    font-size: calc(1rem + 0.5vw);
+    border-radius: 1.47px;
+    margin-bottom: 71px;
 }
