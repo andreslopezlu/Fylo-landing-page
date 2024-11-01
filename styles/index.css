@@ -50,7 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 183px;
+    margin-bottom: 90px;
     margin-top: 98px;
 }
 
@@ -144,12 +144,16 @@ body {
 }
 
 .section2__image {
-    display: block;
     object-fit: contain;
     height: auto;
     width: 85%;
-    margin: 0 auto;
     margin-bottom: 87px;
+}
+
+.section2__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section2__title {
@@ -174,11 +178,11 @@ body {
     width: 85%;
 }
 
-.section2 p:nth-child(3) {
+.section2 p:nth-child(2) {
     margin-bottom: 16px;
 }
 
-.section2 p:nth-child(4) {
+.section2 p:nth-child(3) {
     margin-bottom: 36px;
 }
 
@@ -210,9 +214,7 @@ body {
 }
 
 .comment {
-    display: block;
     width: 90%;
-    margin: 0 auto;
     padding: 26px 13px 20px 26px;
     border-radius: 3.93px;
     margin-bottom: 82px;
@@ -224,7 +226,7 @@ body {
 }
 
 .comment__text {
-    color: #07043B;
+    color: var(--color2);
     font-family: var(--letter2);
     font-size: calc(1rem + 0.5vw);
     font-style: normal;
@@ -239,8 +241,8 @@ body {
 }
 
 .profile__image {
-    width: calc(2.4rem + 0.5vw);
-    height: auto;
+    height: calc(2.4rem + 0.5vw);
+    width: auto;
     border-radius: 50%;
     margin-right: calc(0.8rem + 0.5vw);
 }
@@ -408,12 +410,8 @@ body {
 
 @media (min-width: 770px) {
 
-    body {
-        padding: 80px 5% 80px 5%;
-    }
-
     .navbar {
-        margin: 0;
+        margin: 80px 5% 0 5%;
     }
 
     .navbar__icon {
@@ -430,8 +428,7 @@ body {
 
     .section1 {
         flex-direction: row;
-        margin-top: 100px;
-        margin-bottom: 164px;
+        margin: 100px 5% 164px 5%;
     }
 
     .section1__image {
@@ -486,6 +483,83 @@ body {
         margin: 0;
         width: 200px;
         font-size: 1.4rem;
+    }
+
+    .section2__start {
+        mask-image: url(../assets/Fylo-landing-page-info/fylo-landing-page-with-two-column-layout-master/images/bg-curve-desktop.svg);
+        height: 178px;
+        mask-size: cover;
+        mask-repeat: no-repeat;
+        background-color: var(--color8);
+        mask-position: center;
+    }
+
+    .section2 {
+        flex-direction: row;
+        padding: 0 5% 0 5%;
+    }
+
+    .section2__image {
+        order: 1;
+        width: 42%;
+    }
+
+    .section2__info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section2__title {
+        font-size: 4rem;
+        margin-bottom: 38px;
+        margin-top: 5px;
+    }
+
+    .section2__text {
+        color: var(--color2);
+        font-size: 1.6rem;
+        line-height: 24px;
+        text-align: left;
+        width: 72%;
+    }
+
+    .section2__link {
+        padding-bottom: 4px;
+        margin-bottom: 45px;
+    }
+
+    .link__text {
+        font-size: 1.6rem;
+    }
+
+    .comment {
+        width: 48%;
+        padding: 32px 34px 26px 34px;
+        border-radius: 5px;
+        margin-bottom: 107px;
+    }
+
+    .comment__text {
+        font-size: 1.3rem;
+        line-height: 23px;
+        letter-spacing: 0.5px;
+        margin-bottom: 16px;
+    }
+
+    .profile__image {
+        height: 3.2rem;
+        width: auto;
+    }
+
+    .profile__name {
+        font-size: 1.1rem;
+        letter-spacing: 0.55px;
+    }
+
+    .profile__position {
+        font-size: 0.8rem;
+        line-height: 15px;
+        letter-spacing: 0.4px;
     }
 
 }
