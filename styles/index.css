@@ -135,11 +135,19 @@ body {
     font-size: calc(1.4rem + 0.5vw);
 }
 
+.section2__start {
+    mask-image: url("../assets/Fylo-landing-page-info/fylo-landing-page-with-two-column-layout-master/images/bg-curve-mobile.svg");
+    height: 93px;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: var(--color8);
+}
+
 .section2 {
     display: flex;
     flex-direction: column;
     background-color: var(--color8);
-    padding-top: 93px;
     align-items: center;
 }
 
@@ -274,10 +282,16 @@ body {
 
 .section3 {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     background-color: var(--color9);
+}
+
+.section3__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 54px;
 }
 
 .section3__title {
@@ -287,7 +301,6 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-    margin-top: 54px;
     margin-bottom: 16px;
 }
 
@@ -307,6 +320,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 64%;
+    margin-bottom: 71px;
 }
 
 .form__input-small {
@@ -325,7 +339,6 @@ body {
     height: calc(3.2rem + 0.5vw);
     font-size: calc(1rem + 0.5vw);
     border-radius: 1.47px;
-    margin-bottom: 71px;
 }
 
 .footer {
@@ -562,6 +575,53 @@ body {
         font-size: 0.8rem;
         line-height: 15px;
         letter-spacing: 0.4px;
+    }
+
+    .section3 {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .section3__info {
+        align-items: flex-start;
+        margin: 100px 227px 85px 80px;
+    }
+
+    .section3__title {
+        font-size: 3.2rem;
+        line-height: 48px;
+    }
+
+    .section3__text {
+        text-align: left;
+        font-size: 1.6rem;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        margin-bottom: 0;
+    }
+
+    .form2 {
+        margin-top: 112px;
+        margin-bottom: 0;
+        margin-right: 120px;
+    }
+
+    .form__input--small {
+        height: 48px;
+        border-radius: 3.13px;
+        padding: 16px 0 18px 22px;
+    }
+
+    .form__placeholder--small {
+        font-size: 1.2rem;
+    }
+
+    .form__button--small {
+        height: 48px;
+        font-size: 1.4rem;
+        width: 42%;
+        min-width: 150px;
+        border-radius: 3.13px;
     }
 
 }
