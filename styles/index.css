@@ -11,6 +11,8 @@ html {
     --color7: #2F65F8;
     --color8: #F8F8FE;
     --color9: #575988;
+    --color10: #6C9BFF;
+    --color11: #71DFCC;
     --weight1: 400;
     --weight2: 700;
 }
@@ -128,6 +130,12 @@ body {
     border: none;
 }
 
+.form__button:hover {
+    background-color: var(--color10);
+    filter: drop-shadow(2px 3px 6px rgba(0, 0, 0, 0.16));
+    cursor: pointer;
+}
+
 .form__button--big {
     margin-top: 16px;
     height: calc(4rem + 0.5vw);
@@ -200,12 +208,12 @@ body {
     align-items: center;
     min-width: calc(1.3rem + 0.5vw);
     text-decoration: none;
+    border-top: 0;
+    border-right: 0;
     border-bottom: 2px solid var(--color5);
+    border-left: 0;
     padding-bottom: 6px;
     margin-bottom: 40px;
-}
-
-.link__text {
     color: var(--color5);
     font-family: var(--letter2);
     font-size: calc(1.2rem + 0.5vw);
@@ -213,6 +221,12 @@ body {
     font-weight: 400;
     line-height: normal;
     text-underline-offset: 8px;
+    background-color: var(--color8);
+}
+
+.section2__link:hover {
+    border-bottom: 2px solid var(--color11);
+    color: var(--color11);
 }
 
 .link__icon {
@@ -421,6 +435,16 @@ body {
     background-color: var(--color1);
 }
 
+.about__item:hover, .terms__item:hover {
+    color: var(--color10);
+    cursor: pointer;
+}
+
+.social__facebook:hover, .social__instagram:hover, .social__twitter:hover {
+    background-color: var(--color10);
+    cursor: pointer;
+}
+
 @media (min-width: 1225px) {
 
     .navbar {
@@ -541,9 +565,6 @@ body {
     .section2__link {
         padding-bottom: 4px;
         margin-bottom: 45px;
-    }
-
-    .link__text {
         font-size: 1.6rem;
     }
 
