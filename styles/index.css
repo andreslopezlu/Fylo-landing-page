@@ -421,7 +421,7 @@ body {
     background-color: var(--color1);
 }
 
-@media (min-width: 770px) {
+@media (min-width: 1225px) {
 
     .navbar {
         margin: 80px 5% 0 5%;
@@ -622,6 +622,52 @@ body {
         width: 42%;
         min-width: 150px;
         border-radius: 3.13px;
+    }
+
+    .footer {
+        display: flex;
+        padding: 92px 262px 86px 80px;
+    }
+
+    .contact {
+        margin-right: 15%;
+    }
+
+    .footer__icon {
+        height: 39px;
+        width: 135px;
+        margin-bottom: 36px;
+    }
+
+    .contact__phone-image, .contact__email-image {
+        display: inline;
+    }
+
+    .contact__number, .contact__email{
+        font-size: 1.6rem;
+        display: inline;
+    }
+
+    .contact > .email {
+        margin-bottom: 0;
+    }
+
+    .about {
+        margin-right: 14%;
+        min-width: 70px;
+    }
+
+    .terms {
+        margin-right: 13%;
+        min-width: 85px;
+    }
+
+    .about__item, .terms__item {
+        font-size: 1.6rem;
+    }
+
+    .social {
+        width: 15%;
     }
 
 }
